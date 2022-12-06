@@ -7,7 +7,9 @@
  * specifiers contained into fmt
  * Return: length of the formatted output string
  */
+
 int _printf(const char*format, ...)
+
 {
 	int (*pfunc)(va_list, flags_t *);
 
@@ -18,6 +20,7 @@ int _printf(const char*format, ...)
 	flags_t flags = {0, 0, 0};
 
 	register int count = 0;
+
 	va_start(arguments, format);
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
