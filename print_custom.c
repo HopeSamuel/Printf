@@ -52,7 +52,8 @@ int print_rev(va_list l, flags_t *f)
 
 	(void)f;
 
-	if (!s)s = "(null)";
+	if (!s)
+		s = "(null)";
 	while (s[i])
 		i++;
 	for (j = i -1; j >= 0; j--)
@@ -73,8 +74,9 @@ int print_rot13(va_list l, flags_t *f)
 	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	char *s = va_arg(l, char *);
+	
 	(void)f;
-	for (j = 0;s[j]; j++)
+	for (j = 0; s[j]; j++)
 	{
 		if (s[j] < 'A' || (s[j] > 'Z' && s[j] < 'a') || s[j] > 'z')
 			_putchar(s[j]);

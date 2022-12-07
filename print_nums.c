@@ -33,6 +33,7 @@ int print_unsigned(va_list l, flags_t *f)
 {
 	unsigned int u = va_arg(l, unsigned int);
 	char *str = convert(u, 10, 0);
+
 	(void)f;
 
 	return (_puts(str));
@@ -71,7 +72,8 @@ int count_digit(int i)
 	unsigned int d = 0;
 	unsigned int u;
 
-	if (i < 0)u = i * -1;
+	if (i < 0)
+		u = i * -1;
 	else
 		u = i;
 	while (u != 0)

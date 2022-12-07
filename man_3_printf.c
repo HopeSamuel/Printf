@@ -1,4 +1,4 @@
-TH man 3 "21 November 2022" "0.2" "_printf man page"
+.TH man 3 "21 November 2022" "0.2" "_printf man page"
 .SH NAME
 .B _printf
 -Formatted output conversion.
@@ -10,6 +10,7 @@ TH man 3 "21 November 2022" "0.2" "_printf man page"
 .B , ...)
 .SH DESCRIPTION
 .B _printf()
+
 Prints to standard output under the control of a
 .I format
 .SH Return value
@@ -58,6 +59,7 @@ Prints a string in reverse.
 Prints a string converted to rot13
 .TP
 .B %
+
 A '%' is written but no argument is converted. The complete version specification is '%%'
 .SH EXAMPLE
 
