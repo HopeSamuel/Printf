@@ -6,7 +6,8 @@ TH man 3 "21 November 2022" "0.2" "_printf man page"
 .B #include "main.h"
 
 .B int _printf(const char *
-.I format.B , ...)
+.I format
+.B , ...)
 .SH DESCRIPTION
 .B _printf()
 Prints to standard output under the control of a
@@ -41,7 +42,8 @@ The unsigned int argument is converted to unsigned lowercase hexadecimal notatio
 .B u
 The unsigned int argument is converted to unsigned decimal notation.
 
-TP.B o, b
+TP
+.B o, b
 
 The unsigned int argument is converted to unsigned octal notation(o) or binary notation(b)..
 TP
@@ -60,8 +62,9 @@ A '%' is written but no argument is converted. The complete version specificatio
 .SH EXAMPLE
 
 #include "main.h"
-_printf("%s", "my name",);.
-SH SEE ALSO
+
+_printf("%s", "my name",);
+.SH SEE ALSO
 .I printf(3)
 .SH BUGS
 No known bugs.
