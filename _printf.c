@@ -10,7 +10,7 @@
  * Return: length of the formatted output string
  */
 
-int _printf(const char*format, ...)
+int _printf(const char *format, ...)
 
 {
 	int (*pfunc)(va_list, flags_t *);
