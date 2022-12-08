@@ -47,7 +47,7 @@ int print_bigS(va_list l, flags_t *f)
 
 int print_rev(va_list l, flags_t *f)
 {
-	int i = 0,j;
+	int i = 0 ,j;
 	char *s = va_arg(l, char *);
 
 	(void)f;
@@ -56,7 +56,7 @@ int print_rev(va_list l, flags_t *f)
 		s = "(null)";
 	while (s[i])
 		i++;
-	for (j = i -1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 		_putchar(s[j]);
 	return (i);
 }
@@ -74,7 +74,7 @@ int print_rot13(va_list l, flags_t *f)
 	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	char *s = va_arg(l, char *);
-	
+
 	(void)f;
 	for (j = 0; s[j]; j++)
 	{

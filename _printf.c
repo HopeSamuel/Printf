@@ -1,5 +1,5 @@
 #include "main.h"
-#include<limits.h> 
+#include<limits.h>
 #include<stdio.h>
 /**
  * _printf -produces output according to a format
@@ -10,7 +10,7 @@
  * Return: length of the formatted output string
  */
 
-int _printf(const char*format, ...)
+int _printf(const char *format, ...)
 
 {
 	int (*pfunc)(va_list, flags_t *);

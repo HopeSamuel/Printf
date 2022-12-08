@@ -39,7 +39,7 @@ int print_unsigned(va_list l, flags_t *f)
 	return (_puts(str));
 }
 
-/** 
+/**
  * print_number -helper function that loops through
  * an integer and prints all its digits
  * @n: integer to beprinted
